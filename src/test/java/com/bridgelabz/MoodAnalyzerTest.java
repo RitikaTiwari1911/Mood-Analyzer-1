@@ -9,17 +9,9 @@ public class MoodAnalyzerTest {
     //Message is being taken in parameter
     @Test
     public void givenMessage_Should_ReturnSad() {
-        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in a sad mood");
-        String mood = moodAnalyzer.analyzeMood();
-        Assert.assertEquals("SAD", mood);
-    }
-
-    //Test Case 1.2
-    @Test
-    public void givenMessage_Should_ReturnHappy(){
-        MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in any mood");
-        String mood = moodAnalyzer.analyzeMood();
-        Assert.assertEquals("HAPPY",mood);
+       MoodAnalyzer moodAnalyzer = new MoodAnalyzer("I am in a sad mood");
+       String mood = moodAnalyzer.analyzeMood();
+       Assert.assertEquals("SAD", mood);
     }
 }
 
