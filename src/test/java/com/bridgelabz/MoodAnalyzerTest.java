@@ -26,12 +26,12 @@ public class MoodAnalyzerTest {
 
     //Given invalid message should return exception
     @Test
-    public void invalidMood_Should_ReturnException() throws MoodAnalyzerException{
+    public void invalidMood_Should_ReturnHappy(){
         MoodAnalyzer moodAnalyzer = new MoodAnalyzer(null);
         try{
-            String mood = moodAnalyzer.analyzeMood();
+            moodAnalyzer.analyzeMood();
         }catch(MoodAnalyzerException e){
-            Assert.assertEquals("Enter the correct value",e.getMessage());
+            Assert.assertEquals("HAPPY",e.getMessage());
         }
     }
 }
